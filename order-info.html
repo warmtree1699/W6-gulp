@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        order-info
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="header d-flex align-items-center position-relative py-3">
+        <a href="./index.html">
+            <h1 class="logo m-auto text-secondary">EXHIBINECTION</h1>
+        </a>
+        <nav class="position-absolute end-0">
+            <a href="#" class="px-3">sign in</a>
+            <a href="#" class="px-3">sign up</a>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                aria-controls="offcanvasTop"><span class="material-icons">
+                    shopping_cart
+                    </span></button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                <div class="offcanvas-header bg-dark">
+                    <h3 id="offcanvasTopLabel" class="text-white">Cart List</h3>
+                </div>
+                <div class="offcanvas-body bg-dark">
+                    <ul class="cart-list w-100">
+                        <li class="cart-item position-relative bg-white px-5 py-3 w-100 ms-2">
+                            <button class="btn position-absolute start-0 top-0"><span class="material-icons text-dark">
+                                close
+                                </span>
+                            </button> 
+                            <div class="cart-body d-flex align-items-center">
+                                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/moralis-tsai-8xsktFRw28I-unsplash.jpg?raw=true" alt="" class="cart-pic">
+                                <div class="cart-txt">
+                                    <p>2020 台味設計展</p>
+                                    <p>01 JUN — 31 OCT</p>
+                                    <p>全票</p>
+                                    <p>NT$350</p>
+                                </div>
+                                <div class="cart-number">
+                                    <span class="material-icons">
+                                        remove
+                                        </span>
+                                    <span>01</span>
+                                    <span class="material-icons">
+                                        add
+                                        </span>
+                                </div>
+                            </div>
+                    
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <nav class="py-3 border d-flex justify-content-center">
+        <a href="#" class="px-4">音樂</a>
+        <a href="#" class="px-4">戲劇</a>
+        <a href="./design.html" class="px-4">設計</a>
+        <a href="#" class="px-4">藝術</a>
+        <a href="#" class="px-4">美食</a>
+        <a href="#" class="px-4">旅遊</a>
+        <a href="#" class="px-4">電影</a>
+        <a href="#" class="px-4">親子</a>
+        <a href="#" class="px-4">親子</a>
+    </nav>
+
+    
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="progress" style="height: 1px;">
+                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+            </div>
+            <div class="progress" style="height: 20px;">
+                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+            </div>
+
+            <ul class="order-list">
+                <li class="order-item d-flex align-items-center justify-content-between">
+                    <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg?raw=true"
+                        alt="" class="order-pic">
+                    <div class="order-text">
+                        <h3>2020 台味設計展</h3>
+                        <p>01 JUN — 31 OCT</p>
+                        <p>全票</p>
+                    </div>
+                    <div class="order-text">NT$350</div>
+                    <div class="order-text d-flex align-items-center"><span class="material-icons">
+                            add
+                        </span>
+                        <span class="px-3">01</span>
+                        <span class="material-icons">
+                            add
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <div class="py-3">
+                <h3>訂購人資訊</h3>
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="name" class="form-label">姓名</label>
+                      <input type="text" class="form-control" id="name" placeholder="請輸入姓名">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">連絡電話</label>
+                        <input type="text" class="form-control" id="phone" placeholder="請輸入電話">
+                      </div>
+                      <div class="mb-3">
+                        <label for="discount" class="form-label">優惠碼</label>
+                        <input type="text" class="form-control" id="discount" placeholder="TG87526">
+                      </div>
+                  </form>
+            </div>
+            <div>
+                <div class="d-flex justify-content-between">
+                    <p>小計</p>
+                    <p>NT1050</p>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <p>折扣</p>
+                    <p>-NT50</p>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <p>總金額</p>
+                    <p>NT1000</p>
+                </div>
+                <a href="order-pay.html" class="btn btn-primary w-100">下一步</a>
+            </div>
+        </div>
+    </div>
+
+        <section class="guess">
+            <div class="container">
+                <h2>猜你也喜歡</h2>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-4">
+                        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg?raw=true"
+                            alt="" class="guess-pic mb-1">
+                        <h3 class="mb-1">No.22 線上設計展</h3>
+                        <p>$350</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg"
+                            alt="" class="guess-pic mb-1">
+                        <h3 class="mb-1">No.22 線上設計展</h3>
+                        <p>$350</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg"
+                            alt="" class="guess-pic mb-1">
+                        <h3 class="mb-1">No.22 線上設計展</h3>
+                        <p>$350</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="subscribe">
+            <div class="container">
+                <h2>想收到最新消息嗎？<br>快訂閱我們！</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Recipient's username"
+                                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <button class="btn btn-outline-secondary" type="button"
+                                    id="button-addon2">Button</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="container d-flex justify-content-between py-3">
+                <div class="d-flex">
+                    <p class="me-4">EXHIBINECTION</p>
+                    <p>© 2020. All Rights Reserved.</p>
+                </div>
+                <div class="d-flex">
+                    <p class="px-3">Sign in</p>
+                    <p class="px-3">Sign up</p>
+                </div>
+            </div>
+        </section>
+
+
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="./assets/js/vendors.js"></script>
+        <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
